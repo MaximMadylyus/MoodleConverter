@@ -1,0 +1,79 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="1060A3C8-3EE3-4B34-8686-0056EFFE1605/f:Class1.cs" caret="133" fromTop="7" />
+      <File id="31C232C6-4440-4141-A26B-01C2447F5569/f:Test.cs" caret="269" fromTop="12" />
+      <File id="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397/f:TestTest.cs" caret="460" fromTop="20" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="31C232C6-4440-4141-A26B-01C2447F5569/f:Test.cs" caret="161" fromTop="10" />
+      <File id="31C232C6-4440-4141-A26B-01C2447F5569/f:Test.cs" caret="499" fromTop="21" />
+      <File id="31C232C6-4440-4141-A26B-01C2447F5569/f:Test.cs" caret="355" fromTop="19" />
+      <File id="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397/f:TestTest.cs" caret="37" fromTop="1" />
+      <File id="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397/f:TestTest.cs" caret="281" fromTop="10" />
+      <File id="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397/f:TestTest.cs" caret="447" fromTop="19" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="nUnit" Id="DomainTest.TestTest" type="NUnitTestFixtureElement" Project="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397" />
+        <UnitTestElement Provider="nUnit" Id="DomainTest.TestTest.ConstructorTest" ParentId="DomainTest.TestTest" type="NUnitTestElement" TypeName="DomainTest.TestTest" MethodName="ConstructorTest" Project="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397" />
+        <UnitTestElement Provider="nUnit" Id="DomainTest.TestTest.IsFieldsEmpty" ParentId="DomainTest.TestTest" type="NUnitTestElement" TypeName="DomainTest.TestTest" MethodName="IsFieldsEmpty" Project="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="#region" priority="63" />
+      <Item value="#endregion" priority="63" />
+      <Item value="private" priority="31" />
+      <Item value="string" priority="95" />
+      <Item value="String`0" priority="58" />
+      <Item value="public" priority="95" />
+      <Item value="_taskText" priority="95" />
+      <Item value="return" priority="31" />
+      <Item value="set" priority="32" />
+      <Item value="value" priority="31" />
+      <Item value="using" priority="61" />
+      <Item value="NUnit.Framework" priority="25" />
+      <Item value="Domain" priority="54" />
+      <Item value="void" priority="63" />
+      <Item value="Assert`0" priority="63" />
+      <Item value="null" priority="31" />
+      <Item value="Test`0" priority="63" />
+      <Item value="var" priority="63" />
+      <Item value="new" priority="63" />
+      <Item value="Test" priority="54" />
+      <Item value="testObj" priority="63" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="AreEqual`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Domain.Test">
+      <Item value="TaskText" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

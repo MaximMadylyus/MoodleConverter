@@ -1,0 +1,10 @@
+C:\Users\mmadyl\Test\MoodleConverter\scr\DocxToMoodleXML\bin\DocxToMoodleXML.dll
+C:\Users\mmadyl\Test\MoodleConverter\scr\DocxToMoodleXML\bin\DocxToMoodleXML.pdb
+C:\Users\mmadyl\Test\MoodleConverter\scr\DocxToMoodleXML\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mmadyl\Test\MoodleConverter\scr\DocxToMoodleXML\obj\Debug\DocxToMoodleXML.dll
+C:\Users\mmadyl\Test\MoodleConverter\scr\DocxToMoodleXML\obj\Debug\DocxToMoodleXML.pdb
+C:\Users\mmadyl\Test\MoodleConverter\src\DocxToMoodleXML\bin\DocxToMoodleXML.dll
+C:\Users\mmadyl\Test\MoodleConverter\src\DocxToMoodleXML\bin\DocxToMoodleXML.pdb
+C:\Users\mmadyl\Test\MoodleConverter\src\DocxToMoodleXML\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mmadyl\Test\MoodleConverter\src\DocxToMoodleXML\obj\Debug\DocxToMoodleXML.dll
+C:\Users\mmadyl\Test\MoodleConverter\src\DocxToMoodleXML\obj\Debug\DocxToMoodleXML.pdb
