@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\..\tools\NUnit-2.6.0.12051\bin\nunit.framework.dll</HintPath>
     </Reference>
@@ -51,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
+    <ProjectReference Include="..\Domain\DocxToMoodleXML.Domain.csproj">
       <Project>{31C232C6-4440-4141-A26B-01C2447F5569}</Project>
-      <Name>Domain</Name>
+      <Name>DocxToMoodleXML.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

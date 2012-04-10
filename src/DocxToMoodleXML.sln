@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxToMoodleXML", "DocxToMoodleXML\DocxToMoodleXML.csproj", "{8A8261DC-7D41-43E5-B68A-3025BD24AE80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxToMoodleXML.UI", "DocxToMoodleXML\DocxToMoodleXML.UI.csproj", "{8A8261DC-7D41-43E5-B68A-3025BD24AE80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{31C232C6-4440-4141-A26B-01C2447F5569}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxToMoodleXML.Domain", "Domain\DocxToMoodleXML.Domain.csproj", "{31C232C6-4440-4141-A26B-01C2447F5569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1060A3C8-3EE3-4B34-8686-0056EFFE1605}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxToMoodleXML.DAL", "DAL\DocxToMoodleXML.DAL.csproj", "{1060A3C8-3EE3-4B34-8686-0056EFFE1605}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainTest", "DomainTest\DomainTest.csproj", "{B83912CD-8C6E-4FAC-9579-E8A5EC6D3397}"
 EndProject
