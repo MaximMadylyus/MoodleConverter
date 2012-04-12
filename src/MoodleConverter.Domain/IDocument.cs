@@ -5,14 +5,14 @@ using System.Text;
 
 namespace MoodleConverter.Domain
 {
-    interface IDocument
+    public interface IDocument
     {
         /// <summary>
         /// Opens the document.
         /// </summary>
-        /// <param name="pass">The pass.</param>
+        /// <param name="path">The path.</param>
         /// <remarks></remarks>
-        void OpenDocument(string pass);
+        void OpenDocument(string path);
 
         /// <summary>
         /// Closes the document.

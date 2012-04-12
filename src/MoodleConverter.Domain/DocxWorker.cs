@@ -50,13 +50,13 @@ namespace MoodleConverter.Domain
         /// <summary>
         /// Opens document
         /// </summary>
-        /// <param name="pass">Pass to target docx file</param>
-        public void OpenDocument(string pass)
+        /// <param name="path">Pass to target docx file</param>
+        public void OpenDocument(string path)
         {
             try
             {
                 // Open a doc file
-                _document = _application.Documents.Open(pass, false, true);
+                _document = _application.Documents.Open(path, false, true);
             }
             catch (Exception ex)
             {

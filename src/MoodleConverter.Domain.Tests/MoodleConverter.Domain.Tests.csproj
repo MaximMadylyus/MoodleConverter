@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnsverTest.cs" />
+    <Compile Include="DocumentFactoryTest.cs" />
     <Compile Include="KeyWordTest.cs" />
     <Compile Include="Statics.cs" />
     <Compile Include="DocxWorkerTest.cs" />
