@@ -3,7 +3,7 @@
 <property name="devEnvPath" value="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.com" /> 
     <target name="compileDebug"> 
         <exec program="${devEnvPath}"> 
-        <arg value="src\DocxToMoodleXML.sln" /> 
+        <arg value="src\MoodleConverter.sln" /> 
         <arg value="/build"/> 
         <arg value="Debug" /> 
         </exec> 
