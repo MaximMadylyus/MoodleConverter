@@ -6,7 +6,7 @@ using Task = MoodleConverter.Domain.Task;
 
 namespace MoodleConverter.Domain
 {
-    public class InitialText
+    public class DocxWorker
     {
 #region ***** Private fields
 
@@ -251,6 +251,36 @@ namespace MoodleConverter.Domain
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+        /// <summary>
+        /// Moves the cursor.
+        /// </summary>
+        /// <param name="paragraphCount">The paragraph count.</param>
+        /// <param name="wordCount">The word count.</param>
+        /// <remarks></remarks>
+        public void MoveCursor(int paragraphCount, int wordCount)
+        {
+            try
+            {
+                Object unit = WdUnits.wdParagraph;
+                Object count = paragraphCount;
+                Object extend = WdMovementType.wdMove;
+                _application.Selection.MoveDown(ref unit, ref count, ref extend);
+
+                unit = WdUnits.wdWord;
+                count = wordCount;
+                extend = WdMovementType.wdMove;
+                _application.Selection.MoveRight(ref unit, ref count, ref extend);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
 
     }
 }

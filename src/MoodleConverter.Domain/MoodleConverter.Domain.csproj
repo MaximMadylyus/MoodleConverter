@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="Ansver.cs" />
     <Compile Include="Connstants.cs" />
-    <Compile Include="InitialText.cs" />
+    <Compile Include="DocxWorker.cs" />
     <Compile Include="KeyWord.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

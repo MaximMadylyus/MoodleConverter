@@ -50,7 +50,7 @@
     <Compile Include="AnsverTest.cs" />
     <Compile Include="KeyWordTest.cs" />
     <Compile Include="Statics.cs" />
-    <Compile Include="InitialTextTest.cs" />
+    <Compile Include="DocxWorkerTest.cs" />
     <Compile Include="TaskTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

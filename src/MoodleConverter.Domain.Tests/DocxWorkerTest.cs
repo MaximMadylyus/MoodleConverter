@@ -3,12 +3,12 @@
 namespace MoodleConverter.Domain.Tests
 {
     [TestFixture]
-    class InitialTextTest
+    class DocxWorkerTest
     {
         [Test]
         public void OpenDocumentGetsTextFromDocument()
         {
-            var initialText = new InitialText();
+            var initialText = new DocxWorker();
             initialText.OpenDocument(TestStatics.TestFilePath);
             Assert.IsNotNull(initialText.CurrentDoc);
         }
@@ -16,7 +16,7 @@ namespace MoodleConverter.Domain.Tests
         [Test]
         public void CloseDocumentCheckIfclosed()
         {
-            var initialText = new InitialText();
+            var initialText = new DocxWorker();
             initialText.OpenDocument(TestStatics.TestFilePath);
             initialText.CloseDocument(false);
             Assert.IsNull(initialText.CurrentDoc);
@@ -25,7 +25,7 @@ namespace MoodleConverter.Domain.Tests
         [Test]
         public void GetTextFromPositionTest()
         {
-            var initialText = new InitialText();
+            var initialText = new DocxWorker();
             initialText.OpenDocument(TestStatics.TestFilePath);
             Assert.IsNotNullOrEmpty(initialText.GetTextFromPosition(TextBlockType.word,1));
             Assert.IsNotNullOrEmpty(initialText.GetTextFromPosition(TextBlockType.paragraph, 1));
@@ -36,7 +36,7 @@ namespace MoodleConverter.Domain.Tests
         [Test]
         public void IsTextMarkedTest ()
         {
-            var initialText = new InitialText();
+            var initialText = new DocxWorker();
             initialText.OpenDocument(TestStatics.TestFilePath);
             Assert.IsTrue(initialText.IsTextMarked(TextBlockType.paragraph, 1));
             Assert.IsTrue(initialText.IsTextMarked(TextBlockType.word, 1));
@@ -47,7 +47,7 @@ namespace MoodleConverter.Domain.Tests
         [Test]
         public void GetParagraphTextTest()
         {
-            var initialText = new InitialText();
+            var initialText = new DocxWorker();
             initialText.OpenDocument(TestStatics.TestFilePath);
             Assert.IsNotNullOrEmpty(initialText.GetParagraphText(2));
             initialText.CloseDocument(false);
