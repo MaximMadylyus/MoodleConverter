@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+    project name="TestApplication1" default="build" basedir=".">
+        description>The Hello World of build files.
+        property name="debug" value="true" overwrite="false" /> /**/
+        target name="clean" description="remove all generated files"> /* ÷≈Ћ№*/
+            delete file="TestApplication1.exe" failonerror="false" /> /*удаление файла*/
+            delete file="TestApplication1.pdb" failonerror="false" />
+        /target>
+        target name="build" description="compiles the source code"> /* начало описани€ цели = цель
+ компил€ции исходного кода*/
+            csc target="exe" output="TestApplication1.exe" debug="${debug}">  /*начало описани€ команды =
+  указываем формат выходного файла и его полное им€ . 
+сборка физически может  быть реализована
+ в виде exe (исполн€юемый файл) или DLL  
+(библиотека функций, пристЄгиваема€ к исполн€емому файлу) . — помощью DLL обычно распростран€ютс€ компонанты  */
+                sources>   /*дин из параметров дл€ выполнени€ команды -
+ указываем файл с исходным кодом на си шарпе*/
+                    includes name="TestApplication1.cs" />
+                /sources>
+            /csc>
+        /target>
+    /project>
