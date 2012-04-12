@@ -1,6 +1,0 @@
-<Modules>
-  <Module PersistentId="8A8261DC-7D41-43E5-B68A-3025BD24AE80" ModuleId="DocxToMoodleXML" />
-  <Module PersistentId="31C232C6-4440-4141-A26B-01C2447F5569" ModuleId="Domain" />
-  <Module PersistentId="1060A3C8-3EE3-4B34-8686-0056EFFE1605" ModuleId="DAL" />
-  <Module PersistentId="B83912CD-8C6E-4FAC-9579-E8A5EC6D3397" ModuleId="DomainTest" />
-</Modules>

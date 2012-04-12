@@ -1,8 +1,0 @@
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\bin\Debug\DomainTest.dll
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\bin\Debug\DomainTest.pdb
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\bin\Debug\Domain.dll
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\bin\Debug\nunit.framework.dll
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\bin\Debug\Domain.pdb
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\obj\Debug\DomainTest.dll
-C:\Users\mmadyl\Test\MoodleConverter\src\DomainTest\obj\Debug\DomainTest.pdb
