@@ -6,7 +6,7 @@ using Task = MoodleConverter.Domain.Task;
 
 namespace MoodleConverter.Domain
 {
-    public class DocxWorker
+    public class DocxWorker : IDocument
     {
 #region ***** Private fields
 
