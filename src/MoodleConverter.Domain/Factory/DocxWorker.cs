@@ -280,7 +280,10 @@ namespace MoodleConverter.Domain
             }
         }
 
-
-
+    
+        public int GetParagraphCount()
+        {
+            return _document.Paragraphs.Count;
+        }
     }
 }

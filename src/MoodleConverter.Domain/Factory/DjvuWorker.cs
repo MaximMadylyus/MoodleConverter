@@ -51,5 +51,10 @@ namespace MoodleConverter.Domain
         {
             throw new NotImplementedException();
         }
+
+        public int GetParagraphCount()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

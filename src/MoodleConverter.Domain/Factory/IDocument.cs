@@ -75,5 +75,10 @@ namespace MoodleConverter.Domain
         /// <remarks></remarks>
         void MoveCursor(int paragraphCount, int wordCount);
 
+        /// <summary>
+        /// Gets the paragraph count.
+        /// </summary>
+        /// <remarks></remarks>
+        int GetParagraphCount();
     }
 }

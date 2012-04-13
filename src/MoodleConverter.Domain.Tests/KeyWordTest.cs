@@ -8,8 +8,8 @@ namespace MoodleConverter.Domain.Tests
         [Test]
         public void IsTaskStartKeyWord()
         {
-            Assert.IsTrue(KeyWord.IsTaskStart("\r" ,"1", ".."));
-            Assert.IsFalse(KeyWord.IsTaskStart(".", "З;lghns;g", ")"));
+            Assert.IsTrue(KeyWord.IsTaskStart("1", ".."));
+            Assert.IsFalse(KeyWord.IsTaskStart("З;lghns;g", ")"));
         }
 
         [Test]

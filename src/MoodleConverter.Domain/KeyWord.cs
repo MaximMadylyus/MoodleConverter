@@ -20,7 +20,7 @@ namespace MoodleConverter.Domain
 
         private static string _newLine = "\r";
 
-        public static bool IsTaskStart(string prewword, string curword, string nextword)
+        public static bool IsTaskStart(string curword, string nextword)
         {
             bool isStart = false;
             bool isNumber;
@@ -35,12 +35,12 @@ namespace MoodleConverter.Domain
             }
 
 
-            if (_tasksStartWords.Contains(curword) && prewword.Trim(' ') == _newLine)
+            if (_tasksStartWords.Contains(curword) && _functionWords.Contains(nextword.Trim(' ')))
             {
                 isStart = true;
             }
 
-            if (isNumber && _functionWords.Contains(nextword.Trim(' ')) && prewword.Trim(' ') == _newLine )
+            if (isNumber && _functionWords.Contains(nextword.Trim(' ')) )
             {
                 isStart = true;
             }
