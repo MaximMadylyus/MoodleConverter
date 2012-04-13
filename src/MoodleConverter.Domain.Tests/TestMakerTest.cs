@@ -44,7 +44,7 @@ namespace MoodleConverter.Domain.Tests
             var tm = new TestMaker();
             tm.OpenDocument(TestStatics.TestFilePath);
             tm.FindTestBegin();
-            tm.Document.MoveCursor(1, 1);
+            tm.Document.MoveCursor(1, 2);
             Assert.IsNotNullOrEmpty(tm.GetAnsverText());
         }
     }
