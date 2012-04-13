@@ -18,7 +18,7 @@ namespace MoodleConverter.Domain
 
                                                  };
 
-        private static string _newLine = "\r";
+        public static string NewLine = "\r";
 
         public static bool IsTaskStart(string curword, string nextword)
         {
@@ -48,17 +48,13 @@ namespace MoodleConverter.Domain
             return isStart;
         }
 
-        public static bool IsAnswerStart(string prewword, string curword, string nextword)
+        public static bool IsAnswerStart(string curword, string nextword)
         {
-            bool isStart = false;
-            int num = 0;
-
             if (_ansverStartWords.Contains(curword.Trim(' ')) && _functionWords.Contains(nextword.Trim(' ')))
             {
-                isStart = true;
+                return true;
             }
-
-            return isStart;
+            return false;
         }
        public enum WordType
         {

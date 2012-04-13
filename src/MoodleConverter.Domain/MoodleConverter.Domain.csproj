@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ansver.cs" />
-    <Compile Include="Connstants.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Factory\DjvuWorker.cs" />
     <Compile Include="Factory\DocumentFactory.cs" />
     <Compile Include="Factory\DocxWorker.cs" />

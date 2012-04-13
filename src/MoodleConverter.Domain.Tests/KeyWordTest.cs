@@ -15,8 +15,8 @@ namespace MoodleConverter.Domain.Tests
         [Test]
         public void IsAnsversStartKeyWord()
         {
-            Assert.IsTrue(KeyWord.IsAnswerStart(".", "A", ")"));
-            Assert.IsFalse(KeyWord.IsAnswerStart(".", "Завдання", ")"));
+            Assert.IsTrue(KeyWord.IsAnswerStart("A", ")"));
+            Assert.IsFalse(KeyWord.IsAnswerStart("Завдання", ")"));
         }
     }
 }
