@@ -33,7 +33,7 @@ namespace MoodleConverter.Domain.Tests
             initialText.CloseDocument(false);
         }
 
-        [Test]
+        [Test]        
         public void IsTextMarkedTest ()
         {
             var initialText = new DocxWorker();

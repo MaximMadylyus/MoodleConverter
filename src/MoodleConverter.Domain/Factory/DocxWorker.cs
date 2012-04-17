@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
-using Task = MoodleConverter.Domain.Task;
 
 namespace MoodleConverter.Domain
 {
@@ -221,9 +220,9 @@ namespace MoodleConverter.Domain
         {
             try
             {
-                Paragraph oParagraph = _document.Paragraphs[index];
-                Range wordrange = oParagraph.Range;
-                return wordrange.Text;
+                Paragraph paragraph = _document.Paragraphs[index];
+                Range wordRange = paragraph.Range;
+                return wordRange.Text;
             }
             catch (Exception ex)
             {

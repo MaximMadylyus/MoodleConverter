@@ -11,7 +11,7 @@ namespace MoodleConverter.Domain
         {
             IDocument concreteWorker = null;
 
-            if (path.EndsWith(".docx"))
+            if (path.EndsWith(".docx", StringComparison.InvariantCultureIgnoreCase))
             {
                 concreteWorker = new DocxWorker();
             }
