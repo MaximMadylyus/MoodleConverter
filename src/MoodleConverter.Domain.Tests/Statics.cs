@@ -2,6 +2,6 @@
 {
     internal abstract class TestStatics
     {
-        public static string TestFilePath = "D:\\Test2.docx";
+        public static string TestFilePath = "D:\\Test1.docx";
     }
 }

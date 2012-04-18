@@ -21,6 +21,16 @@
             set { _isCorrect = value; }
         }
 
+         
         #endregion
+        public Ansver()
+        {
+        }
+
+        public Ansver(string text, bool isCorrect)
+        {
+            _ansverText = text;
+            _isCorrect = isCorrect;
+        }
     }
 }

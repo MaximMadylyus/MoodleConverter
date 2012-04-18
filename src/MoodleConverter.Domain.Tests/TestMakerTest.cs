@@ -21,7 +21,7 @@ namespace MoodleConverter.Domain.Tests
         {
             var tm = new TestMaker();
             tm.OpenDocument(TestStatics.TestFilePath);
-            tm.FindTestBegin();
+            Assert.IsTrue(tm.FindTestBegin());
             tm.Document.CloseDocument(false);
             Assert.AreEqual(1,tm.TestCount);
         }
@@ -46,6 +46,18 @@ namespace MoodleConverter.Domain.Tests
             tm.FindTestBegin();
             tm.Document.MoveCursor(1, 2);
             Assert.IsNotNullOrEmpty(tm.GetAnsverText());
+            tm.Document.CloseDocument(false);
         }
+
+        [Test]
+        public void GetTasksTest()
+        {
+            var tm = new TestMaker();
+            tm.OpenDocument(TestStatics.TestFilePath);
+            tm.AddTasks();
+            Assert.IsNotEmpty(tm.Tasks);
+            tm.Document.CloseDocument(false);
+        }
+
     }
 }

@@ -11,6 +11,7 @@ namespace MoodleConverter.Domain
         private IDocument _document;
         private int _paragraphPosition;
         private int _testCount;
+        private List<Task> _tasks = new List<Task>();
         #endregion
 
         #region ***** public properties
@@ -24,6 +25,15 @@ namespace MoodleConverter.Domain
         public int TestCount
         { get { return _testCount; }
             set { _testCount = value; }
+        }
+
+        /// <summary>
+        /// Gets the tasks.
+        /// </summary>
+        /// <remarks></remarks>
+        public List<Task> Tasks
+        { 
+            get { return _tasks;} 
         }
 
         #endregion
@@ -49,7 +59,7 @@ namespace MoodleConverter.Domain
         /// Moves cursor to the start of first test
         /// </summary>
         /// <remarks></remarks>
-        public void FindTestBegin()
+        public bool FindTestBegin()
         {
             bool isFind = false;
             while (!isFind && (_document.GetParagraphCount()> _paragraphPosition))
@@ -69,6 +79,7 @@ namespace MoodleConverter.Domain
                     _document.MoveCursor(1, 0);
                 }
             }
+            return isFind;
         }
 
         /// <summary>
@@ -122,9 +133,41 @@ namespace MoodleConverter.Domain
                 annsverText += _document.GetTextFromPosition(TextBlockType.word, 1);
                 _document.MoveCursor(0, 1);
             }
+            if (_document.GetTextFromPosition(TextBlockType.word, 1).Trim(' ') == KeyWord.NewLine)
+            {
+                _document.MoveCursor(0, 1);
+            }
             return annsverText;
         }
 
+
+
+
+
+        /// <summary>
+        /// Adds the tasks to task list.
+        /// </summary>
+        /// <remarks></remarks>
+        public void AddTasks()
+        {
+            while (FindTestBegin())
+            {
+                var curTask = new Task();
+                curTask.TaskText = _document.GetTextFromPosition(TextBlockType.paragraph, 1);
+                _document.MoveCursor(1,0);
+
+                while (IsAnsverBegin())
+                {
+                    _document.MoveCursor(0,2);
+                    bool isCorrect = _document.IsTextMarked(TextBlockType.word, 1);
+                    string answerText = GetAnsverText();
+                    curTask.Ansvers.Add(new Ansver(answerText, isCorrect));
+                }
+                
+                _tasks.Add(curTask);
+            }
+
+        }
 
     }
 }
