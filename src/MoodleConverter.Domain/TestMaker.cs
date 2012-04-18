@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 
 namespace MoodleConverter.Domain
 {
@@ -38,28 +37,12 @@ namespace MoodleConverter.Domain
 
         #endregion
 
-        /// <summary>
-        /// Opens the document.
-        /// </summary>
-        /// <param name="path">The path.</param>
-        /// <remarks></remarks>
-        public void OpenDocument (string path)
-        {
-            try
-            {
-                _document = DocumentFactory.GetDocumentInstance(path);
-                _document.OpenDocument(path);
-            }
-            catch (Exception ex)
-            {
-            }
-        }
-
+        #region ***** private methods
         /// <summary>
         /// Moves cursor to the start of first test
         /// </summary>
         /// <remarks></remarks>
-        public bool FindTestBegin()
+        private bool FindTestBegin()
         {
             bool isFind = false;
             while (!isFind && (_document.GetParagraphCount()> _paragraphPosition))
@@ -87,7 +70,7 @@ namespace MoodleConverter.Domain
         /// </summary>
         /// <returns><c>true</c> if [is ansver begin]; otherwise, <c>false</c>.</returns>
         /// <remarks></remarks>
-        public bool IsAnsverBegin()
+        private bool IsAnsverBegin()
         {
             try
             {
@@ -109,7 +92,7 @@ namespace MoodleConverter.Domain
         /// Moves cursor to next ansver start.
         /// </summary>
         /// <remarks></remarks>
-        public void MoveToNextAnsver()
+        private void MoveToNextAnsver()
         {
             while ((_document.GetTextFromPosition(TextBlockType.word, 1).Trim(' ') != KeyWord.NewLine) &&
                    !IsAnsverBegin())
@@ -124,7 +107,7 @@ namespace MoodleConverter.Domain
         /// </summary>
         /// <returns>String with ansver</returns>
         /// <remarks></remarks>
-        public string GetAnsverText()
+        private string GetAnsverText()
         {
             string annsverText = string.Empty;
             while ((_document.GetTextFromPosition(TextBlockType.word, 1).Trim(' ') != KeyWord.NewLine) &&
@@ -140,9 +123,25 @@ namespace MoodleConverter.Domain
             return annsverText;
         }
 
+        #endregion
 
-
-
+        #region ***** public methods
+        /// <summary>
+        /// Opens the document.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <remarks></remarks>
+        public void OpenDocument(string path)
+        {
+            try
+            {
+                _document = DocumentFactory.GetDocumentInstance(path);
+                _document.OpenDocument(path);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
 
         /// <summary>
         /// Adds the tasks to task list.
@@ -168,6 +167,19 @@ namespace MoodleConverter.Domain
             }
 
         }
+
+        /// <summary>
+        /// Writes to XML.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        /// <remarks></remarks>
+        public void WriteToXML(string path)
+        {
+            var xmlWriter = new TestsToXmlWriter();
+            xmlWriter.ConvertToFile(_tasks, path);
+        }
+
+        #endregion  
 
     }
 }
