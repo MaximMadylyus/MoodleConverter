@@ -32,7 +32,7 @@ namespace MoodleConverter.Domain.Tests
             var tm = new TestMaker();
             tm.OpenDocument(TestStatics.TestFilePath);
             tm.AddTasks();
-            tm.WriteToXML(TestStatics.TestXMLPath);
+            tm.WriteToXML(TestStatics.TestXmlPath);
             tm.Document.CloseDocument(false);
         }
 
