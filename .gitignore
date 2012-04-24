@@ -20,3 +20,5 @@
 /src/MoodleConverter.Data/bin
 /src/_ReSharper.MoodleConverter
 /src/MoodleConverter.suo
+/src/MoodleConverter.Data.Test/obj
+/src/MoodleConverter.Data.Test/bin
