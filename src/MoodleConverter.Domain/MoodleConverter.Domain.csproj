@@ -56,6 +56,7 @@
     <Compile Include="KeyWord.cs" />
     <Compile Include="Factory\PdfWorker.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Reposiotry\IRepository.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />

@@ -7,7 +7,7 @@ using MoodleConverter.Domain.Model;
 
 namespace MoodleConverter.Data
 {
-    class MoodleConverterDBContext : DbContext 
+    public class MoodleConverterDBContext : DbContext 
     {
         public DbSet<User> Test
         {
